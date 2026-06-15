@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: swinerton-takt-platform
+    env: python
+    pythonVersion: 3.11
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run swinerton_takt_platform.py --server.port 10000 --server.headless true"
+    envVars:
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: "true"
+      - key: STREAMLIT_SERVER_PORT
+        value: "10000"
+      - key: STREAMLIT_LOGGER_LEVEL
+        value: "error"
+      - key: STREAMLIT_CLIENT_SHOW_ERROR_DETAILS
+        value: "false"
