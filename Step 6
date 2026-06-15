@@ -1,0 +1,25 @@
+# Swinerton Takt Planning Platform
+
+Complete Takt planning application with Phase 1-4 UI and Phase 2B risk/buffer logic.
+
+## Quick Start
+
+```bash
+pip install -r requirements.txt
+streamlit run swinerton_takt_platform.py
+```
+
+## Features
+
+- **Phase 1**: Field reference cards (ADM 8-constraint model)
+- **Phase 2**: Takt analysis & schedule optimization
+- **Phase 2B**: Risk management & strategic buffer placement
+- **Phase 3/4**: UI ready (coming soon)
+
+## Deploy to Cloud
+
+Deployed on Render (free tier). See DEPLOY_TO_CLOUD.md for instructions.
+
+## Portland Division
+
+P2SL 2020 | Zero Rework by 2027
